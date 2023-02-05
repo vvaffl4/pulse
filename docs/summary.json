@@ -1,0 +1,16 @@
+[
+	{
+		"title": "Functional Design",
+		"file": "functional-design.md",
+		"children": [
+			{
+				"title": "Domain Model",
+				"file": "functional-design/domain-model.md"
+			},
+			{
+				"title": "Use Case Diagram",
+				"file": "functional-design/use-case-diagram.md"
+			}
+		]
+	}
+]
