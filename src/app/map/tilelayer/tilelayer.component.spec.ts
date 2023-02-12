@@ -1,23 +1,22 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TilelayerComponent } from './tilelayer.component';
+import { TileLayerComponent } from './tilelayer.component';
 
 describe('TilelayerComponent', () => {
-  let component: TilelayerComponent;
-  let fixture: ComponentFixture<TilelayerComponent>;
+	let component: TileLayerComponent;
+	let fixture: ComponentFixture<TileLayerComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ TilelayerComponent ]
-    })
-    .compileComponents();
+	beforeEach(async () => {
+		await TestBed.configureTestingModule({
+			declarations: [TileLayerComponent],
+		}).compileComponents();
 
-    fixture = TestBed.createComponent(TilelayerComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+		fixture = TestBed.createComponent(TileLayerComponent);
+		component = fixture.componentInstance;
+		fixture.detectChanges();
+	});
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+	it('should create', () => {
+		expect(component).toBeTruthy();
+	});
 });

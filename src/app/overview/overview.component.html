@@ -1,5 +1,18 @@
 <mat-grid-list cols="4" rowHeight="100vh" gutterSize="0px">
-	<mat-grid-tile id="map" colspan="3" [style.background]="'#aad3df'">
+	<mat-grid-tile colspan="3" [style.background]="'#aad3df'">
+		<map-container width="100%" height="100%" (singleclick)="handleMapClick($event)">
+			<map-view [zoom]="2" [center]="[2, 2]" />
+			<map-tile-layer>
+				<map-source-xyz />
+			</map-tile-layer>
+			<map-vector-layer>
+				<map-feature-source>
+					<map-blip-feature [x]="6.086316588841352" [y]="52.64111119673913" />
+					<map-blip-feature [x]="5.942431459349176" [y]="52.56519060842686" />
+					<map-poly-feature />
+				</map-feature-source>
+			</map-vector-layer>
+		</map-container>
 	</mat-grid-tile>
 	<mat-grid-tile colspan="1" [style.background]="'#3f3f3f'">
 		<app-alert-list />

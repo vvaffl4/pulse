@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { AlertListModule } from '../alert-list/alert-list.module';
 import { MatListModule } from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MapModule } from '../map/map.module';
 
 @NgModule({
 	declarations: [OverviewComponent],
@@ -15,6 +16,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 		AlertListModule,
 		MatListModule,
 		MatGridListModule,
+		MapModule,
 	],
 })
 export class OverviewModule {}

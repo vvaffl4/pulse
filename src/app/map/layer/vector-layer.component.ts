@@ -1,18 +1,18 @@
 import { MapComponent } from '../map.component';
 import { Component, OnInit } from '@angular/core';
-import TileLayer from 'ol/layer/Tile';
-import { LayerComponent } from '../layer/layer.component';
+import { LayerComponent } from './layer.component';
+import VectorLayer from 'ol/layer/Vector';
 
 @Component({
-	selector: 'map-tile-layer',
+	selector: 'map-vector-layer',
 	template: `<ng-content></ng-content>`,
 })
-export class TileLayerComponent extends LayerComponent implements OnInit {
+export class VectorLayerComponent extends LayerComponent implements OnInit {
 	constructor(host: MapComponent) {
 		super(host);
 	}
 	override ngOnInit() {
-		this.instance = new TileLayer();
+		this.instance = new VectorLayer();
 		super.ngOnInit();
 	}
 }
